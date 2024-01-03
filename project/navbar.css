@@ -1,0 +1,301 @@
+body {
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+
+
+
+/* Navbar brand hover effect */
+.navbar-brand:hover {
+    transform: scale(1.1); /* Change the scale factor for the desired zoom effect */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+/* Home link hover effect */
+.navbar-nav .nav-item:nth-child(1) .nav-link:hover {
+    color: #FFD700; /* Change this to your desired hover color */
+  }
+  
+  /* Services link hover effect */
+  .navbar-nav .nav-item:nth-child(2) .nav-link:hover {
+    color: #FFD700; /* Change this to your desired hover color */
+  }
+  
+  /* Our Team link hover effect */
+  .navbar-nav .nav-item:nth-child(3) .nav-link:hover {
+    color: #FFD700; /* Change this to your desired hover color */
+  }
+  
+
+
+
+
+
+/* Add the following styles to adjust font and line spacing in specific elements */
+h3,
+p,
+li {
+  letter-spacing: 1px;
+  line-height: 1.6;
+  /* justify-content: center; */
+  /* text-align: center; */
+}
+
+
+.responsive-font-example {
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+.ag-courses-item_title,
+.ag-courses-item_date-box,
+.ag-courses-item_date {
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+
+.img-fluid {
+  margin-top: 9px;
+  width: 100%;
+  height: 500px;
+  margin-top: 1.6cm;
+}
+
+.responsive-font-example {
+  margin-top: -1.5cm;
+  text-align: center;
+  color: rgb(210, 207, 138);
+  font-weight: bold;
+  font-style: italic;
+}
+
+.navbar {
+  height: 75px;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  background-color: transparent;
+  padding-right: 20px;
+  /* justify-content: center; */
+}
+.navbar-nav{
+ /* float: inline-end; */
+ padding-right: 200px;
+}
+.nav-link {
+  color: #3e3434; /* Menu item color */
+}
+.navbar-brand, .navbar-nav .nav-link {
+        letter-spacing: 1px;
+        line-height: 1.6; 
+        /* color: #FFF; */
+    }
+
+    /* Add the following styles to adjust font and line spacing in dropdown menu */
+    .navbar-nav .dropdown-menu .dropdown-item {
+        letter-spacing: 1px; 
+        line-height: 1.6;
+        color: #FFF; 
+    }
+
+.navbar-scroll {
+  background-color: #111010;
+  /* Change this to your desired color */
+  transition: background-color 0.4s ease-in-out;
+}
+
+.fa-duotone {
+  margin-left: 4cm;
+  word-spacing: 15px;
+  
+}
+.w3-container{
+  color: rgb(61, 70, 71);
+}
+
+/* cards slider */
+.ag-courses_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  padding: 50px 0;
+  animation: mymove 5s infinite;
+}
+
+.ag-courses_item {
+  -ms-flex-preferred-size: calc(33.33333% - 30px);
+  flex-basis: calc(33.33333% - 30px);
+
+  margin: 0 15px 30px;
+
+  overflow: hidden;
+
+  border-radius: 28px;
+}
+
+.ag-courses-item_link {
+  display: block;
+  padding: 30px 20px;
+  background-color: #010101;
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+.ag-courses-item_link:hover,
+.ag-courses-item_link:hover .ag-courses-item_date {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.ag-courses-item_link:hover .ag-courses-item_bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+}
+
+.ag-courses-item_title {
+  min-height: 87px;
+  margin: 0 0 25px;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 30px;
+  color: #FFF;
+  z-index: 2;
+  position: relative;
+}
+
+.ag-courses-item_date-box {
+  font-size: 18px;
+  color: #FFF;
+  z-index: 2;
+  position: relative;
+}
+
+.ag-courses-item_date {
+  font-weight: bold;
+  color: #f9b234;
+
+  -webkit-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease
+}
+
+.ag-courses-item_bg {
+  height: 128px;
+  width: 128px;
+  background-color: #f9b234;
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  border-radius: 50%;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+  background-color: #3ecd5e;
+}
+
+.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+  background-color: #e44002;
+
+}
+
+.ag-courses_item:nth-child(4n) .ag-courses-item_bg {
+  background-color: #952aff;
+}
+
+.ag-courses_item:nth-child(5n) .ag-courses-item_bg {
+  background-color: #cd3e94;
+}
+
+.ag-courses_item:nth-child(6n) .ag-courses-item_bg {
+  background-color: #4c49ea;
+}
+
+
+
+@media only screen and (max-width: 979px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
+  }
+
+  .ag-courses-item_title {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ag-format-container {
+    width: 96%;
+  }
+
+}
+
+@media only screen and (max-width: 639px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+
+  .ag-courses-item_title {
+    min-height: 72px;
+    line-height: 1;
+
+    font-size: 24px;
+  }
+
+  .ag-courses-item_link {
+    padding: 22px 40px;
+  }
+
+  .ag-courses-item_date-box {
+    font-size: 16px;
+  }
+}
+
+/* scroll buttion */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  /* display: none; */
+}
+
+/* Carousel Styles */
+/* #carouselExampleIndicators {
+  margin-top: 20px;
+} */
+
+/* Adjust Carousel Image Size */
+/* #carouselExampleIndicators img {
+  max-width: 100%;
+  height: auto;
+} */
+
+/* Carousel Caption Styles */
+/* .carousel-caption { */
+/* background: rgba(56, 56, 56, 0.7); Adjust background color and transparency */
+/* padding: 15px; Adjust padding as needed */
+/* border-radius: 5px; Add border-radius for rounded corners */
+/* margin-top: 5px;
+} */
+/* Placeholder Styles - Adjust as needed */
+/* .carousel-caption p {
+  color: #fff;
+  font-size: 16px;
+} */
